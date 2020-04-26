@@ -19,12 +19,8 @@ body {
 .bg-1 {
   background: #2d2d30;
   color: #bdbdbd;
-}
-.bg-1 h3 {color: #fff;}
-.bg-1 p {font-style: italic;}
-.list-group-item:first-child {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+  width: 80vw;
+  margin: auto;
 }
 
 html {
@@ -51,27 +47,28 @@ scroll-behavior: smooth;
 }
 
 .shadow .btn:hover {
-background-color: black;
-color: white;
+  background-color: black;
+  color: white;
 }
 
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
 
 .background {
   width: 100vw;
@@ -83,7 +80,11 @@ body {
 }
 
 .container{
-  background: #fff;
+  background: linear-gradient(to right, #061161, #780206);
+  color: #bdbdbd;
+  width: 80vw;
+  height: 250px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,7 +93,7 @@ body {
 .title{
   font-size: 90px;
   font-weight: bold;
-  background: linear-gradient(to right, #7927b2, #fb3182);
+  background: linear-gradient(to right, #fc354c, #0abfbc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   max-width: 600px;
