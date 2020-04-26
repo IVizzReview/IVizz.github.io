@@ -83,15 +83,16 @@ body {
   background: linear-gradient(to right, #061161, #780206);
   color: #bdbdbd;
   width: 80vw;
-  height: 250px;
+  height: 270px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 .title{
-  font-size: 90px;
+  font-size: 110px;
   font-weight: bold;
   background: linear-gradient(to right, #fc354c, #0abfbc);
   -webkit-background-clip: text;
