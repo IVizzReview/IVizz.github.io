@@ -31,7 +31,7 @@ html {
 scroll-behavior: smooth;
 }
 
-.btn {
+.shadow .btn {
   margin-top: 25px;
   margin-left: 50px;
   margin-right: -55px;
@@ -50,7 +50,7 @@ scroll-behavior: smooth;
   text-align: center;
 }
 
-.btn:hover {
+.shadow .btn:hover {
 background-color: black;
 color: white;
 }
@@ -83,9 +83,6 @@ body {
 }
 
 .container{
-  width: 90%;
-  height: 250px;
-  max-width: 960px;
   background: #fff;
   display: flex;
   justify-content: center;
