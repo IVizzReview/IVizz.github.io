@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Prevent Drowning</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Prompt&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=ruby&amp;skin=sons-of-obsidian"></script>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Prevent Drowning</title>
 </head>
-<body>
 
+<body>
     <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="#home">Prevent Drowning</a>
@@ -29,12 +27,30 @@
       <li class="nav-item active">
         <a class="nav-link" href="#main">Home<span class="sr-only"></span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#accessories">
-Accessories</a>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Accessories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#accessories1">Arduino Nano 3.0 Mini USB</a>
+          <a class="dropdown-item" href="#accessories2">SIM900A</a>
+          <a class="dropdown-item" href="#accessories3">Pressure Transducer Sensor</a>
+        </div>
       </li>
+
       <li class="nav-item">
-        <a class="nav-link" href="#source">Source Code</a>
+        <a class="nav-link" href="#details">Details</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Source Code
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#source1">Arduino Nano 3.0 Mini USB</a>
+          <a class="dropdown-item" href="#source2">SIM900A</a>
+          <a class="dropdown-item" href="#source3">Pressure Transducer Sensor</a>
+        </div>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#member">Member</a>
@@ -54,9 +70,10 @@ Accessories</a>
 </div>
 </div>
 
-    <div id="main" class="container-fluid mt-md-3 rounded" style="overflow-x: hidden;">
+
+    <div id="main" class="container-fluid" style="overflow-x: hidden;">
         <div class="row p-0 d-flex justify-content-center mt-5">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="shadow p-4 mb-4 bg-light rounded">
                 <h1>บทคัดย่อ (Abstract)</h1>
                 <p>
@@ -75,31 +92,31 @@ Accessories</a>
             </div>
             </div>
 
-            <div class="col-md-5" id="member" >
+            <div class="col-md-5" id="member">
                 <div class="shadow p-4 mb-4 bg-light rounded">
                 <h1>สมาชิก (Member)</h1>
                 <p>
                     62070003 นายกฤติน ช่วยละแม<br>
-                    <button class="btn"  onclick="window.location.href = 'https://www.facebook.com/krittin.chuaylamae';">Facebook</button>
-                    <button class="btn button2" onclick="window.location.href = 'https://github.com/aff717616';">github</button>
+                    <button class="btn bt1" onclick="window.location.href = 'https://www.facebook.com/krittin.chuaylamae';">Facebook</button>
+                    <button class="btn" onclick="window.location.href = 'https://github.com/aff717616';">github</button>
                     <br>
                     62070019 นางสาวเกษราภรณ์ เดชบุญ<br>
-                    <button class="btn" onclick="window.location.href = 'https://www.facebook.com/ketsaraporn.viewii';">Facebook</button>
+                    <button class="btn bt1" onclick="window.location.href = 'https://www.facebook.com/ketsaraporn.viewii';">Facebook</button>
                     <button class="btn" onclick="window.location.href = 'https://github.com/IVizzReview';">github</button>
                     <br>
                     62070055 นายฐิติพล บุญลำพันธ์<br>
-                    <button class="btn" onclick="window.location.href = 'https://www.facebook.com/profile.php?id=100006703847106';">Facebook</button>
+                    <button class="btn bt1" onclick="window.location.href = 'https://www.facebook.com/profile.php?id=100006703847106';">Facebook</button>
                     <button class="btn" onclick="window.location.href = 'https://github.com/NeoDarkfame';">github</button>
                     <br>
                     62070056 นายณชนน บุญสนอง<br>
-                    <button class="btn button1" onclick="window.location.href = 'https://www.facebook.com/bankboonsanong';">Facebook</button>
-                    <button class="btn button2" onclick="window.location.href = 'https://github.com/Bot-Bank100';">github</button>
+                    <button class="btn bt1" onclick="window.location.href = 'https://www.facebook.com/bankboonsanong';">Facebook</button>
+                    <button class="btn" onclick="window.location.href = 'https://github.com/Bot-Bank100';">github</button>
                 </p>
-            </div>
+                </div>
             </div>
         </div>
-        <div id="accessories" class="bg-1">
-        <div class="row d-flex justify-content-center mt-1">
+        <div class="bg-1">
+        <div class="row d-flex justify-content-center mt-1" id="accessories1">
             <div class="col-11 d-flex justify-content-center">
                 <img class="equipment" src="img/arduino nano.png" style="height: 400px; width: 400px;">
             </div>
@@ -112,7 +129,7 @@ Accessories</a>
                 </p>
             </div>
         </div>
-        <div class="row d-flex justify-content-center mt-1">
+        <div class="row d-flex justify-content-center mt-1" id="accessories2">
             <div class="col-11 d-flex justify-content-center">
                 <img class="equipment" src="img/sim900a.png" style="height: 400px; width: 400px;">
             </div>
@@ -129,7 +146,7 @@ Accessories</a>
                 </p>
             </div>
         </div>
-        <div class="row d-flex justify-content-center mt-1">
+        <div class="row d-flex justify-content-center mt-1" id="accessories3">
             <div class="col-11 d-flex justify-content-center">
                 <img class="equipment" src="img/water pressure.png" style="height: 400px; width: 400px;">
             </div>
@@ -145,17 +162,38 @@ Accessories</a>
                     ความดันสูงสุด: 290.08PSI (2000 kPa)
                 </p>
                 <br>
+                <br>
+                <br>
+
             </div>
         </div>
         </div>
-        <br>
-        <div id="source">
-            <br>
-            <br>
-            <br>
+                <br>
 
+        <div id="details">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10 d-flex justify-content-center">
+                <div class="shadow p-4 mb-4 bg-light rounded">
+            <div class="col-md-12">
+                <center>
+                <h1>หลักการทำงาน (Details)</h1>
+                <p>
+                    เราจะใช้เซ็นเซอร์วัดแรงดัน Pressure Transducer Sensor วัดแรงดันว่าความลึกเท่านี้มีแรงดันน้ำประมาณเท่าไหร่ ถ้ามากกว่าที่กำหนดไว้ก็จะทำการส่งข้อความผ่าน SIM900A ไปหาผู้ปกครองเเละนับเวลาอีก 10 วินาที ถ้าหากเเรงดันยังมากกว่าที่กำหนดจะส่งข้อความใหม่อีกรอบ
+                </p>
+                </center>
+                <br>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="bg-1">
+            <br>
+            <br>
+            <div id="source1">
             <center>
                 <h1>Source Code</h1>
+                <br>
             <h3>Arduino Nano 3.0 Mini USB</h3>
             </center>
             <br>
@@ -239,9 +277,13 @@ void SendMessage(){
   Serial.println("Message has been sent");
 }
 </pre>
+                </div>
             </div>
         </div>
-        <br>
+        <div id="source2">
+            <br>
+            <br>
+            <br>
         <center>
             <h3>SIM900A</h3>
         </center>
@@ -306,9 +348,11 @@ void loop()
   Serial.write ("Unread Message done");
 }
 </pre>
+                </div>
             </div>
         </div>
         <br>
+        <div id="source3">
         <center>
             <h3>Pressure Transducer Sensor</h3>
         </center>
@@ -338,10 +382,13 @@ void loop() {
 }
 </pre>
 <br>
+                </div>
             </div>
         </div>
         </div>
+        <br>
+        <br>
     </div>
-
 </body>
+
 </html>
